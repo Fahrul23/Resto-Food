@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="review single padding-tb">
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="related">
+                    <ul class="tab-bar">
+                        <li class="btn-search bg-dark text-white text-center" id="defaultOpen" onclick="openCity(event, 'four')">
+                            <span>Reviews</span>
+                        </li>
+                    </ul>
+                    <div id="four" class="tabcontent">
+                        <div class="section-wrapper">
+                            <div class="review">
+                                <ul class="content">
+                                    <li >
+                                        <div class="post-thumb">
+                                            <img src="assets/images/clients/01.jpg" alt="shop" />
+                                        </div>
+                                        <div class="post-content">
+                                            <div class="content-area">
+                                                <div class="entry-meta">
+                                                    <div class="posted-on">
+                                                        <a href="#">/</a>
+                                                        <p>Posted on December 25, 2017 at 6:57 am</p>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                        <i class="icofont-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-content">
+                                                    <p>Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{
+    reviews.map(rev => (
+        <div id="four" class="tabcontent">
+        <div class="section-wrapper">
+            <div class="review">
+                <ul class="content">
+                    <li >
+                        <div class="post-thumb">
+                            <img src={rev.review.user.profile_image} alt="shop" />
+                        </div>
+                        <div class="post-content">
+                            <div class="content-area">
+                                <div class="entry-meta">
+                                    <div class="posted-on">
+                                        <a href="#">{rev.review.user.name}</a>
+                                        <p>Posted on {rev.review.review_time_friendly}</p>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <p>{rev.review.review_text}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    ))
+
+}
+</html>
