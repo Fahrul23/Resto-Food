@@ -1,7 +1,6 @@
 # Resto-Food
 
-
-<img src="(https://user-images.githubusercontent.com/53459506/103472620-ee7b0a80-4dc1-11eb-95b8-f50c2a7eb5ee.jpg" width="860">
+<img src="https://user-images.githubusercontent.com/53459506/103472680-bf18cd80-4dc2-11eb-847a-49abacc289ec.jpg" width="860"></img>
 
 
 This website application is used to search for restaurants based on the city where you live.
@@ -31,6 +30,7 @@ $ npm install
 ```
 # dev server  with hot reload at http://localhost:8080
 $ npm run start or yarn start
+
 # Runs the app in the development mode
 Open (http://localhost:3000) to view it in the browser
 
